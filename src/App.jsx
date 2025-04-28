@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-2xl h-[600px] shadow-lg rounded-lg overflow-hidden">
-        <AgentChat  onUserTextMessage={onUserTextMessage} title='Chatbot' welcomeMessage='Olá, como posso ajudar?' inputPlaceholder='Digite sua mensagem...' audio={new Audio(API_TOKEN)} />
+        <AgentChat  onUserTextMessage={onUserTextMessage} title='Chatbot' welcomeMessage='Olá, como posso ajudar?' inputPlaceholder='Digite sua mensagem...' transcribingMessage='Transcrevendo áudio...' audio={new Audio(API_TOKEN)} />
       </div>
     </div>
   );
